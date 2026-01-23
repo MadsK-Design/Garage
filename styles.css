@@ -1,0 +1,205 @@
+:root {
+  --gap: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 18px;
+  background: #0b0c10;
+  color: #e8e8e8;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.sub {
+  margin: 0 0 14px;
+  opacity: .8;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  align-items: flex-start;
+}
+
+.panel {
+  background: #13151c;
+  border: 1px solid #252a38;
+  border-radius: 14px;
+  padding: 14px;
+  flex: 1 1 320px;
+  min-width: 300px;
+}
+
+.panel h2 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  opacity: .9;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  opacity: .85;
+  margin: 10px 0 6px;
+}
+
+input,
+select,
+button,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #2a3142;
+  background: #0f1220;
+  color: #e8e8e8;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4a66ff;
+}
+
+button {
+  cursor: pointer;
+  background: #2230ff;
+  border-color: #2230ff;
+  font-weight: 650;
+}
+
+button.secondary {
+  background: #0f1220;
+  border-color: #2a3142;
+  font-weight: 600;
+}
+
+button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.btnrow {
+  display: flex;
+  gap: var(--gap);
+  flex-wrap: wrap;
+}
+
+.btnrow > * {
+  flex: 1 1 160px;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: .85;
+}
+
+.hr {
+  height: 1px;
+  background: #252a38;
+  margin: 14px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--gap);
+  margin-top: 14px;
+}
+
+.garage {
+  background: #11131a;
+  border: 1px solid #252a38;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.ghead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.gtitle {
+  font-weight: 800;
+}
+
+.gmeta {
+  font-size: 12px;
+  opacity: .75;
+  white-space: nowrap;
+}
+
+.slots {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.slot {
+  border: 1px solid #252a38;
+  background: #0c0e14;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+}
+
+.slot.empty {
+  opacity: .6;
+  border-style: dashed;
+}
+
+.carname {
+  font-weight: 700;
+}
+
+.cartype {
+  font-size: 12px;
+  opacity: .75;
+}
+
+.chip {
+  font-size: 11px;
+  padding: 3px 8px;
+  border: 1px solid #2a3142;
+  border-radius: 999px;
+  opacity: .85;
+}
+
+.danger {
+  color: #ffb4b4;
+}
+
+.tiny {
+  font-size: 11px;
+  opacity: .75;
+}
+
+.footer {
+  margin-top: 16px;
+  font-size: 12px;
+  opacity: .7;
+}
+.divider {
+  height: 1px;
+  background: #2a2a2a;
+  margin: 14px 0;
+  border-radius: 1px;
+}
